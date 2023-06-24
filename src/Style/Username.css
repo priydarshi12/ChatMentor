@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow: auto; */
+    box-sizing: border-box;
+}
+.outercontainer{
+    width:100vw;
+   height:100vh;
+   overflow: auto;
+   overflow-x: hidden;
+}
+.container{
+
+background-color:#023430 ;
+display: flex;
+
+flex-direction: column;
+}
+
+.title-bar{
+    background-color:#023430 ;
+   
+    height:10vh;
+    width:100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.logo-left{
+    text-align: center;
+    font-family:Cabinsans-serif;
+    font-weight: 400;
+    color:white;
+}
+
+.content{
+    
+    display:flex;
+   
+    width:100%;
+    flex-grow: 1;
+    height:100%;
+    
+}
+
+
+ /* left */
+.left{
+  margin: 4rem;
+  background-color: #00684a;  
+  /* height:100%; */
+  width:50%;
+  /* height:100%; */
+  border-top-left-radius :32px; ;
+  border-top-right-radius:32px ;
+
+}
+.left-text{
+    margin:25px;
+}
+.left-text{
+    margin-left:15px;
+}
+
+  .left-heading{
+    color:rgb(255,255,255);
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom:3rem;
+    text-decoration: none solid rgb(255,255,255);
+  }
+
+  .left-subheading{
+    margin-left:15px;
+    color:rgb(255,255,255);
+    font-size: 20px;
+    line-height: 56px;
+    font-weight: 400;
+    text-decoration: none solid rgb(255,255,255);
+  }
+
+  .left-content{
+    margin-left:29px;
+    color:RGB(184, 196, 194);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    text-decoration: none solid rgb(255,255,255);
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-top: 4rem;
+  margin-left:1.5rem;
+  margin-right:3rem;
+  background-color:white;  
+  height:100%;
+  width:50%;
+  border-radius: 1.5rem;
+  /* height:auto; */
+  }
+  .right-heading {
+    margin: 50px; 
+    margin-bottom: 15px;
+    
+  }
+  .right-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom:3rem;
+  }
+ .right-heading{
+    color:#001E2B;
+    font-size:44px; 
+    font-weight:500;
+    line-height:56px;
+    text-decoration:none solid rgb(0, 30, 43)
+ }
+ .right-subheading{
+    color:#023430;
+    font-size:18px;
+    font-weight:300;
+ }
+  input[type="text"] {
+    border: none; /* Remove the default border */
+    border-bottom: 4px solid black; /* Add a transparent bottom border */
+    outline: none; /* Remove the focus outline */
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    width:300px;
+    padding:30px;
+    margin:15px;
+    height:25px;
+    font-size: 18px;
+    background-color: rgb(237, 237, 237);
+  }
+  
+  input[type="text"]:focus {
+    border-bottom-color: rgb(55, 172, 222); /* Apply a green color to the bottom border when the input is focused */
+  }
+  input[type="password"] {
+    border: none; /* Remove the default border */
+    border-bottom: 4px solid black; /* Add a transparent bottom border */
+    outline: none; /* Remove the focus outline */
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    width:300px;
+    padding:30px;
+    margin:15px;
+    height:25px;
+    font-size: 18px;
+    background-color: rgb(237, 237, 237);
+    
+  }
+  
+  input[type="password"]:focus {
+    border-bottom-color: rgb(55, 172, 222); /* Apply a green color to the bottom border when the input is focused */
+  }
+  
+  
+  input[type="text"]::placeholder {
+    font-size: 18px;
+  }
+  input[type="password"]::placeholder {
+    font-size: 18px;
+  }
+.container-btn{
+    display: flex;
+    justify-content: center;
+}
+  .login-btn{
+    background-color: #00ed64;
+    font-family:"Euclid Circular A";
+    font-size:18px;
+    font-style:normal;
+    text-align:center;
+   border: 1px solid #000;
+   width:300px;
+   font-weight: 500;
+   margin:15px;
+   height:60px;
+
+  }
+  .login-btn:hover{
+    border-radius: 15px;
+  }
+
+  .not-mem{
+    margin-top:14px;
+    margin-left:14px;
+    color:#000000a7;
+    font-size:16px;
+    font-weight:400;
+  }
+  @media (max-width: 768px) {
+    .right-heading {
+      margin: 10px; /* Adjusted margin for screens smaller than 768px */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .right-heading {
+      margin: 5px; /* Further adjusted margin for screens smaller than 480px */
+    }
+  }
+ 
+  @media screen and (max-width: 900px) {
+    .left-heading{
+        font-size: 32px;  
+    }
+    .left{
+        width:80%;
+        border-radius:25px;
+    }
+    }
+ 
+  @media screen and (max-width: 800px) {
+   .content{
+    display: flex;
+    flex-direction: column-reverse;
+   align-items: center;    
+}
+.left{
+    width:80%;
+    border-radius:25px;
+}
+.right-heading{
+    font-size: 22px;
+}
+    }
+
+  @media screen and (max-width:700px){
+  input[type="text"]{
+    width:300px;
+    padding:20px;
+    margin:15px;
+    height:15px;
+    font-size: 16px;
+    border-bottom: 3px solid black; /* Add a transparent bottom border */
+
+  }
+  input[type="password"]{
+    width:300px;
+    padding:20px;
+    margin:15px;
+    height:15px;
+    font-size: 16px;
+    border-bottom: 3px solid black; /* Add a transparent bottom border */
+
+  }
+  input[type="text"]::placeholder {
+    font-size: 16px;
+  }
+  input[type="password"]::placeholder {
+    font-size: 16px;
+  }
+  .login-btn{
+    font-size:16px;
+    font-style:normal;
+   border: 1px solid #000;
+   width:300px;
+   font-weight: 500;
+   margin:15px;
+   height:40px;
+
+  }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width:620px){
+    .left{
+        width:90%;
+        border-radius:25px;
+       
+    }
+    .right{
+        width:90%;
+        margin-left:50px;
+        border-radius:25px;
+    }
+    .left-content{
+        margin-left:29px;
+        color:RGB(184, 196, 194);
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        text-decoration: none solid rgb(255,255,255);
+      }
+  }
+  
+

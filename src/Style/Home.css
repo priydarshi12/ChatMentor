@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.container-home{
+    background-color: #deebde;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    width:100vw;
+    overflow: hidden;
+}
+
+.content{
+    flex-grow: 1;
+    flex-shrink: 0;
+    width:100vw;
+
+}
+
+@media screen and (max-width:600px) {
+ .container-home{
+    overflow: hidden;
+ }   
+} 

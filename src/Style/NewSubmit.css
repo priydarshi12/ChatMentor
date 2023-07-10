@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-container-ns{
+    width: 100vw;
+    height:100vh;
+}
+.container-ns{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #023430;
+}
+.title-ns{
+    margin-top: 20px;
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    font-family: Cabinsans-serif;
+}
+.content-ns{
+    display: flex;
+    height:90%;
+    width:100%;
+}
+
+.left-ns{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.form-ns{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    height:60%;
+    padding: 30px;
+    border-radius: 20px;
+}
+input[type="text"] {
+    border: none; /* Remove the default border */
+    border-bottom: 4px solid black; /* Add a transparent bottom border */
+    outline: none; /* Remove the focus outline */
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    width:300px;
+    padding:30px;
+    margin:15px;
+    height:25px;
+    font-size: 18px;
+    background-color: rgb(237, 237, 237);
+  }
+  
+  input[type="text"]:focus {
+    border-bottom-color: rgb(55, 172, 222); /* Apply a green color to the bottom border when the input is focused */
+  }
+  input[type="password"] {
+    border: none; /* Remove the default border */
+    border-bottom: 4px solid black; /* Add a transparent bottom border */
+    outline: none; /* Remove the focus outline */
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    width:300px;
+    padding:30px;
+    margin:15px;
+    height:25px;
+    font-size: 18px;
+    background-color: rgb(237, 237, 237);
+    
+  }
+  
+  input[type="password"]:focus {
+    border-bottom-color: rgb(55, 172, 222); /* Apply a green color to the bottom border when the input is focused */
+  }
+  
+  
+  input[type="text"]::placeholder {
+    font-size: 18px;
+  }
+  input[type="password"]::placeholder {
+    font-size: 18px;
+  }
+.right-ns{
+    width:50%;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.form-head{
+    font-weight: 500;
+    margin-bottom: 5px ;
+}
+
+
+.form-btn-ns{
+    background-color: #00ed64;
+    font-family:"Euclid Circular A";
+    font-size:18px;
+    font-style:normal;
+    text-align:center;
+   border: 1px solid #000;
+   width:300px;
+   font-weight: 500;
+   margin:30px;
+   height:60px;
+   padding: 20px;
+}
+
+.form-btn-ns:hover{
+    border-radius: 15px;
+  }
+img{
+    width:80%;
+    height:80%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:900px){
+
+    .left-ns{
+        width:48%;
+        
+    }
+
+    .form-ns{
+        padding: 20px;
+        height:55%;
+        width:98%;
+    }
+    .form-btn-ns{
+        width:250px;
+       margin-bottom:0px;
+       padding: 10px;
+    }
+    .form-head{
+        font-size: 28px;
+    }
+    .input-ns[type="password"] {
+        width:250px;
+        padding:30px;
+        margin:15px;
+        height:25px;
+        font-size: 16px;        
+      }
+    .input-ns[type="text"] {
+        width:250px;
+        padding:30px;
+        margin:15px;
+        height:25px;
+        font-size: 16px;        
+      }
+}
+
+@media screen and (max-width:700px){
+    
+  .input-ns[type="text"] {
+      width:250px;
+      padding:30px;
+      margin:15px;
+      height:25px;
+      font-size: 16px; 
+      font-weight: 500;       
+    }
+}
+
+@media screen and (max-width:550px) {
+ .img-ns{
+  display:none;
+ } 
+ .left-ns{
+  width:100%;
+ align-items: flex-start;
+ 
+ }
+ .form-ns{
+ margin-top: 90px;
+  width:90%;
+ }
+}
+
+
+
+.load-icon{
+  width:99vw;
+  height:99vh;
+  overflow: hidden;
+  object-fit: contain;
+}

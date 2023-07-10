@@ -1,0 +1,12 @@
+export const BASE_URL = "https://chatmentor-backend.onrender.com";
+// export const BASE_URL = "http://192.168.58.233:8080";
+export const loginRoute = `${BASE_URL}/api/v1/auth/login`;
+export const registerRoute = `${BASE_URL}/api/v1/auth/register`;
+export const summaryRoute = `${BASE_URL}/api/v1/openai/summary`;
+export const textRoute = `${BASE_URL}/api/v1/openai/text`;
+export const jsRoute = `${BASE_URL}/api/v1/openai/js`;
+export const chatRoute = `${BASE_URL}/api/v1/openai/chat`;
+export const imgRoute = `${BASE_URL}/api/v1/openai/img`;
+export const forgetPasswordRoute = `${BASE_URL}/password/sendpasswordlink`;
+export const newValidPasswordRoute = `${BASE_URL}/password/newpassword/validate`;
+export const newPasswordRoute = `${BASE_URL}/password/newpassword`;

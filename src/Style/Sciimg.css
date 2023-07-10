@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-container-chat{
+    width:100%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.container-chat{
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width:50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading-para{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.input-img{
+    width:80%;
+   height:auto;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    max-height: 100px; /* Set maximum height to 200px */
+    /* overflow-y: auto; Add vertical scrollbar when content overflows */
+    border: none; /* Remove the default border */
+    outline: none; 
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    resize:vertical;
+    margin:10px;
+    font-weight: 400;
+    font-size: 16px;
+    resize: vertical;
+}
+.input-img-gen{
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    min-width:90%;
+    border: none; 
+    outline: none; 
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    margin:10px;
+  
+    padding-top: 15px;
+    padding-left: 15px;
+   
+    font-weight: 400;
+    font-size: 16px;
+    resize: none;
+    background-color: rgb(237, 237, 237);
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .output-img{
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    width:300px;
+    height:300px;
+    display: flex;
+    border:1px solid black;
+    justify-content: center;
+    align-items: center;
+    
+    border: none; /* Remove the default border */
+    outline: none; 
+    transition: border-bottom-color 0.3s; /* Add a transition effect for the underline color */
+    margin:10px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+.output-imgC{
+    width: 256px;
+    height:256px;
+    object-fit: contain;
+}
+
+.btn-go-back-img{
+    background-color: #00ed64;
+    font-family:"Euclid Circular A";
+    font-size:18px;
+    font-style:normal;
+    text-align:center;
+   border: 1px solid #000;
+   width:100px;
+   font-weight: 500;
+   margin:15px;
+   height:35px;
+   font-size:17px;
+   padding:6px 16px;
+   background-color: #2ea44f;
+   font-weight: 500;
+   color: azure;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+}
+
+.btn-go-back-img:hover{
+    border-radius: 15px;
+  }
+.btn-download-img{
+    background-color: #00ed64;
+    font-family:"Euclid Circular A";
+    font-size:18px;
+    font-style:normal;
+    text-align:center;
+   border: 1px solid #000;
+   width:100px;
+   font-weight: 500;
+   margin:15px;
+   height:35px;
+   font-size:17px;
+   /* padding:6px 16px; */
+   background-color: #2ea44f;
+   font-weight: 500;
+   color: azure;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+}
+
+.btn-go-back-img:hover{
+    border-radius: 15px;
+  }
+
+@media screen and (max-width:700px) {
+    .image{
+        display: none;
+    }
+    .container-chat{
+        width:90%;
+    }
+}
